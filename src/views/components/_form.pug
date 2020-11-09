@@ -1,0 +1,13 @@
+p contactanos:
+form(action="")
+	input(type="text" placeholder="Email")
+	input(type="text" placeholder="Telefono")
+	input(type="text" placeholder="Mensaje")
+
+	input(type="checkbox", name="terminos" id="terminos")
+	label(for="terminos")
+		|	He leído, comprendo y acepto la 
+		a(href="#", target="_blank", rel="noopener noreferrer")  política de privacidad y de tratamiento de datos
+		| al igual que los 
+		a(href="#", target="_blank", rel="noopener noreferrer") términos y condiciones del servicio.
+	input(type="submit", value="Enviar")

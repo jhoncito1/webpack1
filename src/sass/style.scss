@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	&__logo{
+		padding: 4% 2%;
+		background-color: black;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		img {
+			width: 60%;
+			min-height: 100%;
+			margin: 0 auto;
+		}
+	}
+	&__informacion{
+		margin: 0;
+		width: 100%;
+		background-color: black;
+		color: #9be644;
+		text-align: center;
+		padding: 4% 0;
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		img {
+			display: none;
+		}
+	}
+}
+
+.footer__informacion__sociales {
+	padding: 2% 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer__formulario {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	color: white;
+	p {
+		margin: 0;
+		padding: 0;
+		font-size: 32px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 2%;
+	}
+	input[type="text"] {
+		width: 60%;
+	}
+}
+
+

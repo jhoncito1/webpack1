@@ -1,0 +1,43 @@
+-
+	const menu = {
+		nosotros: './nosotros/',
+		noticias: './nosotros/',
+		servicios: './nosotros/',
+		"pregunta frecuentes": './nosotros/',
+		"Adquiere tu tag": './nosotros/',
+	}
+
+-
+	const nosotros = {
+		"¿que es gopass?": './nosotros/',
+		"¿como funciona?": './nosotros/',
+		"escoge tu membresia": './nosotros/',
+		"¿como instalarlo/?": './nosotros/',
+		"¿donde encontrarnos?": './nosotros/',
+		"descarga tu app": './nosotros/',
+	}
+
+-
+	const servicios = {
+		gasolina: './servicios/gasolina.html',
+		peajes: './servicios/peajes.html',
+		parqueaderos: './servicios/parqueaderos.html',
+		soat: './servicios/soat.html',
+		lavafante: './servicios/lavafante.html',
+		parking: '#',
+		automac: '#'
+	}
+
+
+nav
+	ul
+		each key, val in menu
+			li: a(href=key)=val
+				if val == 'nosotros'
+					ul
+						each key, val in nosotros
+							li: a(href=key)=val
+				if val == 'servicios'
+					ul
+						each key, val in servicios
+							li: a(href=key)=val

@@ -1,0 +1,25 @@
+footer
+	.footer__logo
+		img(src=require("../../assets/images/logoGopassFooter.png").default, alt="logo gopass")
+	.footer__informacion
+		.footer__informacion__telefonos
+			img(src=require("../../assets/images/gopassPhone.png").default, alt="numero de contacto gopass") 
+			p lineas de atencion al cliente 
+			p(class="footer__informacion__telefonos--local") (+571)4322230
+			p(class="footer__informacion__telefonos--local") (+571)9140014
+		.footer__informacion__direccion
+			img(src=require("../../assets/images/gopassAdress.png").default, alt="direccion de oficinas gopass")
+			p carrera 56# 9-09,of 504 
+			p bogota colombia
+		.footer__informacion__correo
+			img(src=require("../../assets/images/gopassEmail.png").default, alt="coreo electronico gopass")
+			p info@gopass.com.co
+		.footer__informacion__sociales
+			a(class="fab fa-facebook fa-3x" href="#" )
+			a(class="fab fa-instagram fa-3x" href="#")
+			a(class="fab fa-youtube fa-3x" href="#")
+			a(class="fab fa-whatsapp fa-3x" href="#")
+			a(class="fab fa-google-play fa-3x" href="#")
+			a(class="fab fa-apple fa-3x" href="#")
+	.footer__formulario
+		include ../components/_form.pug

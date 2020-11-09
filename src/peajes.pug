@@ -1,0 +1,36 @@
+extends ./views/_plantilla.pug
+block contenido
+	section(class="descripcion")
+		p Pasa por los carriles de pago electrónico en los peajes y LISTO!
+		p
+			| Vive la experiencia con GoPass de no hacer fila, a tu teléfono llegará el cobro directo
+			| del peaje, olvídate del efectivo o de contar monedas para pagar el peaje en demoradas filas.
+		.descripcion__imagen
+			img(src="", alt="imagen carretera")
+			img(src="", alt="imagen responsive")
+
+	section(class="item")
+		p nuestros aliados
+		.items__caja1
+			img(src="", alt="imagen accenorte")
+		.items__caja2
+			img(src="", alt="imagen bogota-villeta")
+
+	section(class="peajes")
+		p peajes activos
+		.activos
+			+peajes("peaje andes", "Autopista Norte #250, via Bogotá-Chia")
+			+peajes("peaje caiquero", "Carrera 7 # 250, via Bogotá-chia")
+			+peajes("peaje fusca", "Autopista Norte #250, via Bogotá-Chia")
+			+peajes("peaje siberia", "Kilometro 9 Via Bogotá-Villeta")
+
+	section(class="desvicular")
+		.devincular__tag
+			p 
+				| si estás vinculado a un tag electrónico diferente a gopass, deberás desvincularte
+				| primero para poder usar los beneficios de gopass en peajes.
+		.desvicular__modal
+			img(src="", alt="aqui va una imagen que dispara un modal")
+
+
+
